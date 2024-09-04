@@ -9,37 +9,38 @@
   </head>
 
   <body
-    class="m-0 flex min-h-screen min-w-[320px] place-items-center bg-[#ffffff] font-inter text-base font-normal text-[#213547] dark:bg-[#242424] dark:text-transparent-white"
+    class="m-0 flex min-h-screen min-w-[320px] place-items-center bg-green-100 px-5 font-inter text-base font-normal text-[#213547] dark:bg-[#242424] dark:text-transparent-white"
   >
     <div
-      class="mx-auto flex max-w-[1280px] flex-col items-center justify-center p-8"
+      class="mx-auto flex w-full min-w-80 max-w-md flex-col items-center justify-start bg-gray-50"
     >
-      <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-        <img
-          src="./vite.svg"
-          class="h-24 p-5 will-change-[filter] hover:drop-shadow-logo"
-          alt="Vite logo"
-        />
-      </a>
-      <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
-        <img
-          src="./tailwindcss.svg"
-          class="h-18 w-auto p-5 will-change-[filter] hover:drop-shadow-logo-tw"
-          alt="TailwindCSS logo"
-        />
-      </a>
-      <h1
-        class="my-12 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text p-4 text-6xl text-transparent"
-      >
-        Hello Vite!
-      </h1>
-      <div class="card">
-        <button id="counter" type="button"></button>
-      </div>
-      <div class="text-gray-600 flex flex-row gap-3 items-center">
-        Built with love by
-        <a href="https://kometo.co/?utm_source=vite-tailwind-nojs-starter" target="_blank" rel="noopener noreferrer"
-          title="KometoLabs" class="shadow-sm"><img class="inline" src="/img/kometo.png" alt="KometoLabs logo" /></a>
+      <figure class="relative w-full">
+        <img class="w-full" src="./public/img/card.png" alt="Card image" />
+        <figcaption>
+          <button
+            class="absolute right-3 top-3 rounded-md border-2 border-gray-200 bg-white p-2 font-medium leading-4"
+          >
+            button
+          </button>
+        </figcaption>
+      </figure>
+
+      <div class="flex w-full flex-col gap-3 px-3 py-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-sm">Subheader</h3>
+            <h1 class="text-xl font-medium">Header</h1>
+          </div>
+
+          <p class="text-lg font-medium">Text</p>
+        </div>
+
+        <button
+          class="rounded-md bg-gray-500 py-3 text-base font-semibold text-white"
+        >
+          Button
+        </button>
+        <p class="text-center text-xs">Sub text</p>
       </div>
     </div>
   </body>
