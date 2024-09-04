@@ -2,20 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
-    <title>Vite App</title>
+    <title>Tailwind Card</title>
   </head>
 
   <body
     class="m-0 flex min-h-screen min-w-[320px] place-items-center bg-green-100 px-5 font-inter text-base font-normal text-[#213547] dark:bg-[#242424] dark:text-transparent-white"
   >
     <div
-      class="mx-auto flex w-full min-w-80 max-w-md flex-col items-center justify-start bg-gray-50"
+      class="relative mx-auto flex h-[468px] w-full min-w-80 max-w-md flex-col items-center justify-start overflow-hidden bg-gray-50"
     >
-      <figure class="relative w-full">
-        <img class="w-full" src="./public/img/card.png" alt="Card image" />
+      <figure class="z-10 w-full">
+        <img class="h-full w-full" src="/img/card.png" alt="Card image" />
         <figcaption>
           <button
             class="absolute right-3 top-3 rounded-md border-2 border-gray-200 bg-white p-2 font-medium leading-4"
@@ -25,7 +25,9 @@
         </figcaption>
       </figure>
 
-      <div class="flex w-full flex-col gap-3 px-3 py-4">
+      <div
+        class="group absolute bottom-0 z-20 flex w-full flex-col gap-3 bg-white px-3 py-4"
+      >
         <div class="flex items-center justify-between">
           <div>
             <h3 class="text-sm">Subheader</h3>
@@ -33,6 +35,27 @@
           </div>
 
           <p class="text-lg font-medium">Text</p>
+        </div>
+
+        <div
+          class="hidden group-hover:flex group-hover:flex-col group-hover:gap-2 group-hover:pt-3"
+        >
+          <div class="flex justify-between">
+            <p class="text-sm">Text</p>
+            <a class="text-sm text-black" href="#">Link</a>
+          </div>
+          <div class="flex justify-between">
+            <p class="text-sm">Text</p>
+            <a class="text-sm text-black" href="#">Link</a>
+          </div>
+          <div class="flex justify-between">
+            <p class="text-sm">Text</p>
+            <a class="text-sm text-black" href="#">Link</a>
+          </div>
+          <div class="flex justify-between">
+            <p class="text-sm">Text</p>
+            <a class="text-sm text-black" href="#">Link</a>
+          </div>
         </div>
 
         <button
