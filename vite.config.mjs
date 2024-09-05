@@ -6,7 +6,13 @@ export default defineConfig({
   },
   build: {
     outDir: "../dist",
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash][extname]',
+        base: '/tailwindCssCard/'  
+      }
+    }
   },
   root: "src",
 });
