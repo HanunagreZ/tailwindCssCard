@@ -27,7 +27,6 @@ export default {
           "0%, 20%": { transform: "translateY(3px)" },
           "100%": { transform: "translateY(0)" },
         },
-
         fade: {
           from: { opacity: 0 },
           to: { opacity: 1 },
