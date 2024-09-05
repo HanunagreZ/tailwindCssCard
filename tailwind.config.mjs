@@ -15,6 +15,29 @@ export default {
       colors: {
         "transparent-white": "rgba(255, 255, 255, 0.87)",
       },
+
+      keyframes: {
+        stretchUp: {
+          "0%, 20%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-122px)" },
+          "70%": { transform: "translateY(-126px)" },
+          "100%": { transform: "translateY(-122px)" },
+        },
+        stretchDown: {
+          "0%, 20%": { transform: "translateY(3px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+
+        fade: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      animation: {
+        expand: "stretchUp 0.3s ease-in",
+        collapse: "stretchDown 0.3s ease-in",
+        fade: "fade 0.5s ease",
+      },
     },
   },
   plugins: [],

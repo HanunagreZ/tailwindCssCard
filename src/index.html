@@ -12,10 +12,10 @@
     class="m-0 flex min-h-screen min-w-[320px] place-items-center bg-green-100 px-5 font-inter text-base font-normal text-[#213547] dark:bg-[#242424] dark:text-transparent-white"
   >
     <div
-      class="relative mx-auto flex h-[468px] w-full min-w-80 max-w-md flex-col items-center justify-start overflow-hidden bg-gray-50"
+      class="relative mx-auto flex h-[380px] w-full min-w-[315px] max-w-[440px] flex-col items-center justify-start overflow-hidden bg-white"
     >
       <figure class="z-10 w-full">
-        <img class="h-full w-full" src="/img/card.png" alt="Card image" />
+        <img class="h-[222px] w-full" src="/img/card.png" alt="Card image" />
         <figcaption>
           <button
             class="absolute right-3 top-3 rounded-md border-2 border-gray-200 bg-white p-2 font-medium leading-4"
@@ -26,7 +26,7 @@
       </figure>
 
       <div
-        class="group absolute bottom-0 z-20 flex w-full flex-col gap-3 bg-white px-3 py-4"
+        class="hover:animate-expand animate-collapse group sticky z-20 flex w-full flex-col gap-3 bg-white px-3 py-4 transition-transform hover:translate-y-[-122px]"
       >
         <div class="flex items-center justify-between">
           <div>
@@ -38,32 +38,37 @@
         </div>
 
         <div
-          class="hidden group-hover:flex group-hover:flex-col group-hover:gap-2 group-hover:pt-3"
+          class="relative flex flex-col gap-2 transition-all group-hover:translate-y-[122px]"
         >
-          <div class="flex justify-between">
+          <button
+            class="rounded-md bg-gray-500 py-3 text-base font-semibold text-white"
+          >
+            Button
+          </button>
+          <p class="text-center text-xs">Sub text</p>
+        </div>
+
+        <div
+          class="group-hover:animate-fade relative flex flex-col gap-2 pt-3 transition-all group-hover:translate-y-[-102px]"
+        >
+          <hr class="invisible group-hover:visible" />
+          <div class="invisible flex justify-between group-hover:visible">
             <p class="text-sm">Text</p>
             <a class="text-sm text-black" href="#">Link</a>
           </div>
-          <div class="flex justify-between">
+          <div class="invisible flex justify-between group-hover:visible">
             <p class="text-sm">Text</p>
             <a class="text-sm text-black" href="#">Link</a>
           </div>
-          <div class="flex justify-between">
+          <div class="invisible flex justify-between group-hover:visible">
             <p class="text-sm">Text</p>
             <a class="text-sm text-black" href="#">Link</a>
           </div>
-          <div class="flex justify-between">
+          <div class="invisible flex justify-between group-hover:visible">
             <p class="text-sm">Text</p>
             <a class="text-sm text-black" href="#">Link</a>
           </div>
         </div>
-
-        <button
-          class="rounded-md bg-gray-500 py-3 text-base font-semibold text-white"
-        >
-          Button
-        </button>
-        <p class="text-center text-xs">Sub text</p>
       </div>
     </div>
   </body>
