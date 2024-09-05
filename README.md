@@ -1,26 +1,23 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f4e57968-eb20-4de8-91c4-001474804566/deploy-status)](https://app.netlify.com/sites/frolicking-kitten-1d5828/deploys)
+## Tailwind Card
+Адаптивная карточка с анимациями
 
-Vite TailwindCSS NoJS Starter
-====
-Scaffold a new project with Vite and Tailwind CSS preconfigured with ease.
+## Стэк
 
-## Motivation
+HTML  
+Tailwind CSS
 
-Most existing Vite + Tailwind starters are aimed to work with a JS framework, e.g Vue or React.
-An important difference of this starter template is that **the build stage does not involve any JavaScript, just pure HTML/CSS compilation**.
+## Цели и задачи
 
-## When to use
+Практика в использовании CSS-фреймворка. Анимация карточки без использования JavaScript
 
-1. When you need to develop a pure HTML/CSS prototype.
-2. When you import a standalone version of a JS framework right from HTML.
+## Деплой
 
-## How to use
+https://tailwind-html-card.netlify.app/
 
-```bash
-npx degit kometolabs/vite-tailwind-nojs-starter my-tailwind-app
-cd my-tailwind-app
-pnpm i || yarn || npm i
-pnpm run dev || yarn dev || npm run dev
-```
+## Превью
 
-**Happy coding!**
+![tailwind-card](https://github.com/user-attachments/assets/f9153c9d-990a-46a8-bb8a-1a6bb389886a)
+
+
+
+
